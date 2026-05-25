@@ -1,0 +1,88 @@
+# =========================
+# NODE MODULES
+# =========================
+
+node_modules/
+
+# =========================
+# ELECTRON BUILDS
+# =========================
+
+dist/
+build/
+release/
+out/
+
+# =========================
+# DOWNLOADS
+# =========================
+
+downloads/
+
+# =========================
+# LOGS
+# =========================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# SYSTEM FILES
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# ENV
+# =========================
+
+.env
+.env.local
+.env.production
+
+# =========================
+# VSCODE
+# =========================
+
+.vscode/
+
+# =========================
+# ELECTRON CACHE
+# =========================
+
+.cache/
+electron-builder-cache/
+
+# =========================
+# TEMP FILES
+# =========================
+
+tmp/
+temp/
+
+# =========================
+# AUTO UPDATER FILES
+# =========================
+
+latest.yml
+
+# =========================
+# PACKAGE LOCKS (OPTIONAL)
+# =========================
+
+# package-lock.json
+# yarn.lock
+
+# =========================
+# TOOLS (OPTIONAL)
+# =========================
+
+# Caso NÃO queira subir os executáveis:
+# tools/*.exe
+
+# Caso queira subir apenas yt-dlp e ffmpeg:
+# !tools/yt-dlp.exe
+# !tools/ffmpeg.exe

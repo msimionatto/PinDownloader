@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PinDownloader</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+
+    <img src="../assets/logo.png" class="logo" alt="Logo">
+
+    <h1>PinDownloader</h1>
+
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="container">
+
+    <!-- BRAND AREA -->
+
+    <div class="branding-area">
+
+      <img src="../assets/logo.png" class="logo-display" alt="Logo">
+
+      <h2 class="software-title">
+        Pin<span>Downloader</span>
+      </h2>
+
+    </div>
+
+    <!-- INPUT -->
+
+    <input
+      id="url"
+      type="text"
+      placeholder="Cole a URL do Pinterest aqui"
+    >
+
+    <!-- SEARCH -->
+
+    <button id="searchVideo" class="search-btn">
+
+      <span id="searchText">
+        🔎 Procurar vídeo
+      </span>
+
+    </button>
+
+    <!-- PREVIEW -->
+
+    <div id="preview" class="preview hidden">
+
+      <img id="thumb" alt="thumbnail">
+
+      <h2 id="title"></h2>
+
+      <p id="description"></p>
+
+      <!-- ACTIONS -->
+
+      <div class="actions">
+
+        <button id="mp3">
+          🎧 MP3
+        </button>
+
+        <button id="mp4">
+          🎬 MP4
+        </button>
+
+        <button id="visit">
+          🌐 Visitar
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- PROGRESS -->
+
+    <div id="progressContainer" class="hidden">
+
+      <div id="progressBar"></div>
+
+      <span id="progressText">
+        0%
+      </span>
+
+    </div>
+
+    <!-- RESET -->
+
+    <button id="reset" class="hidden">
+      🔁 Converter novamente
+    </button>
+
+    <!-- VERSION (yt-dlp) -->
+
+    <p class="version">
+
+      Versão yt-dlp:
+      <span id="version">
+        Carregando...
+      </span>
+
+    </p>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    Desenvolvido por Marcos Simionatto © 2026
+
+  </footer>
+
+  <script src="renderer.js"></script>
+
+</body>
+
+</html>
