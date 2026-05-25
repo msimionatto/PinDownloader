@@ -1,20 +1,37 @@
 # =========================
-# NODE MODULES
+# DEPENDENCIES
 # =========================
 
 node_modules/
 
 # =========================
-# ELECTRON BUILDS
+# ELECTRON BUILD OUTPUT
 # =========================
 
 dist/
 build/
 release/
 out/
+win-unpacked/
 
 # =========================
-# DOWNLOADS
+# INSTALLERS GENERATED
+# =========================
+
+*.exe
+*.dmg
+*.AppImage
+*.deb
+
+# =========================
+# ELECTRON BUILDER CACHE
+# =========================
+
+electron-builder-cache/
+.cache/
+
+# =========================
+# DOWNLOADS (TEMP FILES)
 # =========================
 
 downloads/
@@ -25,36 +42,29 @@ downloads/
 
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
+electron-debug.log*
 
 # =========================
-# SYSTEM FILES
+# ENV FILES
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# OS FILES
 # =========================
 
 .DS_Store
 Thumbs.db
 
 # =========================
-# ENV
-# =========================
-
-.env
-.env.local
-.env.production
-
-# =========================
 # VSCODE
 # =========================
 
 .vscode/
-
-# =========================
-# ELECTRON CACHE
-# =========================
-
-.cache/
-electron-builder-cache/
 
 # =========================
 # TEMP FILES
@@ -64,25 +74,18 @@ tmp/
 temp/
 
 # =========================
-# AUTO UPDATER FILES
+# ELECTRON UPDATER
 # =========================
 
 latest.yml
+*.blockmap
 
 # =========================
-# PACKAGE LOCKS (OPTIONAL)
+# OPTIONAL: TOOLS (RECOMENDADO IGNORAR BINÁRIOS PESADOS)
 # =========================
 
-# package-lock.json
-# yarn.lock
+tools/*.exe
 
-# =========================
-# TOOLS (OPTIONAL)
-# =========================
-
-# Caso NÃO queira subir os executáveis:
-# tools/*.exe
-
-# Caso queira subir apenas yt-dlp e ffmpeg:
+# Se quiser versionar yt-dlp e ffmpeg manualmente, descomente:
 # !tools/yt-dlp.exe
 # !tools/ffmpeg.exe
